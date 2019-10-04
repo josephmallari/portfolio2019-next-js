@@ -10,10 +10,54 @@ ul {
   padding: 0;
 }
 
-li {
-  cursor: pointer;
-}
-
 .contact a {
   text-transform: uppercase;
+}
+
+.projects {
+  margin-top: 25px;
+
+  ul li {
+    display: block;
+  }
+}
+
+.project {
+  &__text {
+    text-transform: uppercase;
+
+    span {
+      display: inline-block;
+      margin-right: 15px;
+    }
+  }
+}
+
+.contact {
+  ul {
+    li {
+      display: inline-block;
+      margin-right: 15px;
+
+      &:nth-child(n + 4) {
+        margin-top: 40px;
+      }
+
+      a {
+        border: 1px solid #000;
+        padding: 12px;
+        border-radius: 34px;
+      }
+    }
+  }
+}
+
+footer {
+  font-size: 18px;
+  display: flex;
+  margin-top: 40px;
+
+  span {
+    flex-grow: 1;
+  }
 }

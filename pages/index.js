@@ -1,11 +1,17 @@
 import React, { useState } from "react";
 import { Transition } from "react-transition-group";
 import NatGeo from "./projects/natgeo";
+import moment from "moment-timezone";
 import "../styles/index.scss";
 
 function Home() {
   const [inProp, setInProp] = useState(false);
   const [visible, setVisible] = useState(false);
+
+  const date = moment.utc(new Date(), true);
+  const de = date.tz("Europe/Berlin").format("LT z");
+  const ny = date.tz("America/New_York").format("LT z");
+  const la = date.tz("America/Los_Angeles").format("LT z");
 
   return (
     <div>
@@ -23,7 +29,7 @@ function Home() {
         previously worked at Lateral GmbH (DE), and CODE AND THEORY (NY)
       </div>
       <div className="projects">
-        <div>Projects</div>
+        <div>Projects I've worked on</div>
         <ul>
           <li>
             <div className="project__text">
@@ -75,6 +81,7 @@ function Home() {
           <li>
             <a>github</a>
           </li>
+          <br />
           <li>
             <a>instagram</a>
           </li>
@@ -86,9 +93,9 @@ function Home() {
       <footer>
         <span>Lettering by Austin Redman</span>
         <span>Design by Willie Ip</span>
-        <span>Berlin Time</span>
-        <span>NY Time</span>
-        <span>LA Time</span>
+        <span>DE {de}</span>
+        <span>NY {ny}</span>
+        <span>LA {la}</span>
       </footer>
     </div>
   );
