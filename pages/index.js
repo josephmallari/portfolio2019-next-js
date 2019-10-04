@@ -15,7 +15,6 @@ function Home() {
           console.log(state)
         }
       </Transition>
-      {/* // header */}
       <div className="lettering">
         <img src="/static/lettering.png" alt="lettering" />
       </div>
@@ -68,33 +67,6 @@ function Home() {
           </li>
         </ul>
       </div>
-      <style jsx global>
-        {`
-          body {
-            font-size: 35px;
-            font-family: helvetica;
-            font-weight: 300;
-            margin: 50px;
-          }
-
-          ul {
-            list-style: none;
-            padding: 0;
-          }
-
-          li {
-            cursor: pointer;
-          }
-
-          .contact a {
-            text-transform: uppercase;
-          }
-
-          .project__info {
-            // display: none;
-          }
-        `}
-      </style>
       <div className="contact">
         <ul>
           <li>
