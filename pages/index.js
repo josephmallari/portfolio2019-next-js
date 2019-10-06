@@ -22,7 +22,7 @@ function Home() {
         }
       </Transition>
       <div className="lettering">
-        <img src="/static/lettering.png" alt="lettering" />
+        <img src="/static/chrome.png" alt="lettering" />
       </div>
       <div>
         Hello, I'm Joseph. I'm a developer based in Berlin, Germany. I
