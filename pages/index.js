@@ -38,17 +38,17 @@ function Home() {
           </li>
           <li>
             <div className="project__text">
-              <span>02</span>American Chemistry Society
+              <span>02</span>adidas originals
             </div>
           </li>
           <li>
             <div className="project__text">
-              <span>03</span>Adidas
+              <span>03</span>The Lot Radio
             </div>
           </li>
           <li>
             <div className="project__text">
-              <span>04</span>Amex
+              <span>04</span>american express
             </div>
           </li>
           <li>
@@ -68,7 +68,12 @@ function Home() {
           </li>
           <li>
             <div className="project__text">
-              <span>08</span>The Lot Radio
+              <span>08</span>American Chemistry Society
+            </div>
+          </li>
+          <li>
+            <div className="project__text">
+              <span>+</span>more
             </div>
           </li>
         </ul>
@@ -76,23 +81,41 @@ function Home() {
       <div className="contact">
         <ul>
           <li>
-            <a>email</a>
+            <a href="mailto:joseph.mallari48@gmail.com" target="_blank">
+              email
+            </a>
           </li>
           <li>
-            <a>github</a>
+            <a href="http://www.github.com/josephmallari" target="_blank">
+              github
+            </a>
           </li>
           <br />
           <li>
-            <a>instagram</a>
+            <a href="http://www.instagram.com/josephmallari" target="_blank">
+              instagram
+            </a>
           </li>
           <li>
-            <a>linkedin</a>
+            <a href="http://www.linkedin.com/in/josephmallari" target="_blank">
+              linkedin
+            </a>
           </li>
         </ul>
       </div>
       <footer>
-        <span>Lettering by Austin Redman</span>
-        <span>Design by Willie Ip</span>
+        <span>
+          Lettering by{" "}
+          <a href="http://www.austinredman.com" target="_blank">
+            Austin Redman
+          </a>
+        </span>
+        <span>
+          Design by{" "}
+          <a href="http://willieip.me" target="_blank">
+            Willie Ip
+          </a>
+        </span>
         <span>DE {de}</span>
         <span>NY {ny}</span>
         <span>LA {la}</span>
