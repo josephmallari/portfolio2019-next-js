@@ -24,12 +24,12 @@ function Home() {
       <div className="lettering">
         <img src="/static/chrome.png" alt="lettering" />
       </div>
-      <div>
+      <header>
         Hello, I'm Joseph. I'm a developer based in Berlin, Germany. I
-        previously worked at Lateral GmbH (DE), and CODE AND THEORY (NY)
-      </div>
+        previously worked at Lateral GmbH (DE), and CODE AND THEORY (NY).
+      </header>
       <div className="projects">
-        <div>Projects I've worked on</div>
+        <div className="projects__header">Projects I've worked on:</div>
         <ul>
           <li>
             <div className="project__text">

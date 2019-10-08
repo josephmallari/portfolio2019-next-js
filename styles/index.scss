@@ -1,40 +1,11 @@
+@font-face {
+  font-family: "Helvetica-Neu";
+  src: url("/static/fonts/Helvetica-Neu.ttf");
+}
+
 body {
-  font-size: 35px;
-  font-family: helvetica;
-  font-weight: 300;
-  margin: 50px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-.contact a {
-  text-transform: uppercase;
-}
-
-.lettering img {
-  width: 100%;
-}
-
-.projects {
-  margin-top: 25px;
-
-  ul li {
-    display: block;
-  }
-}
-
-.project {
-  &__text {
-    text-transform: uppercase;
-
-    span {
-      display: inline-block;
-      margin-right: 15px;
-    }
-  }
+  font-family: "Helvetica-Neu";
+  margin: 15px;
 }
 
 .contact {
@@ -44,7 +15,7 @@ ul {
       margin-right: 15px;
 
       &:nth-child(n + 4) {
-        margin-top: 40px;
+        margin-top: 35px;
       }
 
       a {
@@ -56,12 +27,94 @@ ul {
   }
 }
 
+.lettering {
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact {
+  margin-top: 20px;
+
+  a {
+    text-transform: uppercase;
+  }
+}
+
 footer {
-  font-size: 18px;
+  font-size: 13px;
   display: flex;
   margin-top: 40px;
 
   span {
     flex-grow: 1;
+  }
+}
+
+header {
+  font-size: 20px;
+}
+
+.projects {
+  margin: 20px auto;
+  font-size: 20px;
+}
+
+@media (min-width: 1024px) {
+  body {
+    margin: 50px;
+  }
+
+  header {
+    font-size: 40px;
+  }
+
+  .lettering {
+    margin-bottom: 30px;
+  }
+
+  .projects {
+    margin-top: 40px;
+    font-family: "serif";
+    font-size: 40px;
+
+    &__header {
+      font-family: "Helvetica-Neu";
+    }
+
+    ul {
+      li {
+        display: block;
+
+        span {
+          font-family: "Helvetica-Neu";
+        }
+      }
+    }
+  }
+
+  .project {
+    &__text {
+      letter-spacing: -0.7px;
+      text-transform: uppercase;
+
+      span {
+        display: inline-block;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .contact {
+    font-size: 40px;
+    margin-top: 50px;
   }
 }
