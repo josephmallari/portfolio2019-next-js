@@ -25,8 +25,9 @@ function Home() {
         <img src="/static/chrome.png" alt="lettering" />
       </div>
       <header>
-        Hello, I'm Joseph. I'm a developer based in Berlin, Germany. I
-        previously worked at Lateral GmbH (DE), and CODE AND THEORY (NY).
+        Hello, I'm Joseph. I'm a developer based in Berlin, Germany. I'm
+        currently working at Visual Meta GmbH (DE). I previously worked at
+        Lateral GmbH (DE), and CODE AND THEORY (NY).
       </header>
       <div className="projects">
         <div className="projects__header">Projects I've worked on:</div>
