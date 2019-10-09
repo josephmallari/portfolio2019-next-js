@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Transition } from "react-transition-group";
-import NatGeo from "./projects/natgeo";
+// import NatGeo from "./projects/natgeo";
 import moment from "moment-timezone";
 import "../styles/index.scss";
+import IndexHead from "../components/IndexHead";
 
 function Home() {
   const [inProp, setInProp] = useState(false);
@@ -15,6 +16,7 @@ function Home() {
 
   return (
     <div>
+      <IndexHead />
       <Transition in={inProp} timeout={500}>
         {state =>
           // ...
@@ -22,7 +24,14 @@ function Home() {
         }
       </Transition>
       <div className="lettering">
-        <img src="/static/chrome.png" alt="lettering" />
+        <picture>
+          <source
+            srcSet="/static/chrome.png"
+            alt="lettering"
+            media="(min-width: 1024px)"
+          />
+          <img src="/static/lettering-two.png" alt="lettering" />
+        </picture>
       </div>
       <header>
         Hello, I'm Joseph. I'm a developer based in Berlin, Germany. I'm
@@ -54,7 +63,7 @@ function Home() {
           </li>
           <li>
             <div className="project__text">
-              <span>05</span>Council Foregin Relations
+              <span>05</span>Council Foreign Relations
             </div>
           </li>
           <li>
