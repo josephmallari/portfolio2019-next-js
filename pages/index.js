@@ -33,13 +33,16 @@ function Home() {
           <img src="/static/lettering-two.png" alt="lettering" />
         </picture>
       </div>
-      <header>
+      <h2>
         Hello, I'm Joseph. I'm a developer based in Berlin, Germany. I'm
-        currently working at Visual Meta GmbH (DE). I previously worked at
-        Lateral GmbH (DE), and CODE AND THEORY (NY).
-      </header>
+        currently working at Visual Meta GmbH (DE).
+      </h2>
+      <h2>
+        I most recently worked at Lateral GmbH (DE), a Machine Learning start
+        up. And CODE AND THEORY (NY), a digital agency.
+      </h2>
       <div className="projects">
-        <div className="projects__header">Projects I've worked on:</div>
+        <div className="projects__header">Some projects I've worked on:</div>
         <ul>
           <li>
             <div className="project__text">
