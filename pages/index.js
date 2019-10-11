@@ -15,7 +15,7 @@ function Home() {
   const la = date.tz("America/Los_Angeles").format("LT z");
 
   return (
-    <div class="wrapper">
+    <div className="wrapper">
       <IndexHead />
       <Transition in={inProp} timeout={500}>
         {state =>
@@ -30,7 +30,11 @@ function Home() {
             alt="lettering"
             media="(min-width: 1024px)"
           />
-          <img src="/static/lettering-two.png" alt="lettering" />
+          <img
+            src="/static/lettering-two.png"
+            alt="lettering"
+            onLoad={console.log("image loaded")}
+          />
         </picture>
       </div>
       <h2>
