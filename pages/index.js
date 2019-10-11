@@ -15,7 +15,7 @@ function Home() {
   const la = date.tz("America/Los_Angeles").format("LT z");
 
   return (
-    <div>
+    <div class="wrapper">
       <IndexHead />
       <Transition in={inProp} timeout={500}>
         {state =>
@@ -35,11 +35,18 @@ function Home() {
       </div>
       <h2>
         Hello, I'm Joseph. I'm a developer based in Berlin, Germany. I'm
-        currently working at Visual Meta GmbH (DE).
+        currently working at{" "}
+        <a href="http://www.visualmeta.com" target="_blank">
+          Visual Meta GmbH (DE).
+        </a>
       </h2>
       <h2>
-        I most recently worked at Lateral GmbH (DE), a Machine Learning start
-        up. And CODE AND THEORY (NY), a digital agency.
+        I most recently worked at{" "}
+        <a href="http://lateral.io" target="_blank">
+          Lateral GmbH (DE)
+        </a>
+        , a Machine Learning start up. And CODE AND THEORY (NY), a digital
+        agency.
       </h2>
       <div className="projects">
         <div className="projects__header">Some projects I've worked on:</div>

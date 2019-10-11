@@ -8,17 +8,53 @@ body {
   margin: 15px;
 }
 
+.wrapper {
+  @media (min-width: 1280px) {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
+
 .project {
   &__text {
+    display: inline-block;
     letter-spacing: -0.7px;
     text-transform: uppercase;
+    position: relative;
+
+    @media (min-width: 1024px) {
+      &:before {
+        content: "";
+        width: 0;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        padding: 0;
+        background-image: linear-gradient(white, #ffff00, white);
+        height: 100%;
+        z-index: -1;
+        transition: width 0.7s;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        &::before {
+          padding: 10px;
+          width: 100%;
+        }
+      }
+
+      font-size: 45px;
+    }
 
     span {
       display: inline-block;
       margin-right: 5px;
 
       @media (min-width: 1024px) {
-        margin-right: 15px;
+        margin-right: 10px;
+        font-size: 43px;
       }
     }
   }
@@ -64,6 +100,7 @@ ul {
 
   a {
     text-transform: uppercase;
+    transition: padding 200ms ease-in-out;
   }
 }
 
@@ -86,6 +123,33 @@ h2 {
   line-height: 25px;
   font-weight: 600;
   margin: 0 0 20px;
+
+  a {
+    color: #000;
+    position: relative;
+
+    @media (min-width: 1024px) {
+      &:before {
+        content: "";
+        width: 0;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        padding: 0;
+        background-image: linear-gradient(white, #00bfff, white);
+        height: 100%;
+        z-index: -1;
+        transition: width 0.9s;
+      }
+
+      &:hover {
+        &::before {
+          padding: 10px;
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 .projects {
@@ -106,6 +170,7 @@ h2 {
     font-size: 40px;
     line-height: 45px;
     margin-bottom: 30px;
+    letter-spacing: 1.1px;
   }
 
   .lettering {
@@ -134,5 +199,11 @@ h2 {
   .contact {
     font-size: 40px;
     margin-top: 50px;
+
+    ul li a {
+      &:hover {
+        padding: 15px;
+      }
+    }
   }
 }
