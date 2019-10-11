@@ -31,7 +31,7 @@ function Home() {
             media="(min-width: 1024px)"
           />
           <img
-            src="/static/lettering-two.png"
+            src="/static/mono.png"
             alt="lettering"
             onLoad={console.log("image loaded")}
           />
