@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Transition } from "react-transition-group";
-// import NatGeo from "./projects/natgeo";
+import NatGeo from "./projects/natgeo";
+import Adidas from "./projects/adidas";
 import moment from "moment-timezone";
 import "../styles/index.scss";
 import IndexHead from "../components/IndexHead";
@@ -56,14 +57,19 @@ function Home() {
         <div className="projects__header">Some projects I've worked on:</div>
         <ul>
           <li>
-            <div className="project__text">
+            <div
+              className="project__text"
+              onClick={() => console.log("clicking")}
+            >
               <span>01</span>National Geographic
             </div>
+            <NatGeo />
           </li>
           <li>
             <div className="project__text">
               <span>02</span>adidas originals
             </div>
+            <Adidas />
           </li>
           <li>
             <div className="project__text">
