@@ -99,4 +99,4 @@ function Home() {
   );
 }
 
-export default withGA("UA-xxxxxxxxx-1", Router)(Home);
+export default withGA("UA-71907935-2", Router)(Home);
