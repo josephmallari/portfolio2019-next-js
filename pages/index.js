@@ -4,6 +4,8 @@ import moment from "moment-timezone";
 import "../styles/index.scss";
 import IndexHead from "../components/IndexHead";
 import Projects from "../components/projects";
+import Router from "next/router";
+import withGA from "next-ga";
 
 function Home() {
   const [inProp, setInProp] = useState(false);
@@ -97,4 +99,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default withGA("UA-xxxxxxxxx-1", Router)(Home);
