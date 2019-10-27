@@ -1,15 +1,12 @@
 import React, { useState } from "react";
 import { Transition } from "react-transition-group";
-import NatGeo from "./projects/natgeo";
-import Adidas from "./projects/adidas";
 import moment from "moment-timezone";
 import "../styles/index.scss";
 import IndexHead from "../components/IndexHead";
+import Projects from "../components/projects";
 
 function Home() {
   const [inProp, setInProp] = useState(false);
-  const [visible, setVisible] = useState(false);
-
   const date = moment.utc(new Date(), true);
   const de = date.tz("Europe/Berlin").format("LT z");
   const ny = date.tz("America/New_York").format("LT z");
@@ -53,61 +50,7 @@ function Home() {
         , a Machine Learning start up. And CODE AND THEORY (NY), a digital
         agency.
       </h2>
-      <div className="projects">
-        <div className="projects__header">Some projects I've worked on:</div>
-        <ul>
-          <li>
-            <div
-              className="project__text"
-              onClick={() => console.log("clicking")}
-            >
-              <span>01</span>National Geographic
-            </div>
-            <NatGeo />
-          </li>
-          <li>
-            <div className="project__text">
-              <span>02</span>adidas originals
-            </div>
-            <Adidas />
-          </li>
-          <li>
-            <div className="project__text">
-              <span>03</span>The Lot Radio
-            </div>
-          </li>
-          <li>
-            <div className="project__text">
-              <span>04</span>american express
-            </div>
-          </li>
-          <li>
-            <div className="project__text">
-              <span>05</span>Council Foreign Relations
-            </div>
-          </li>
-          <li>
-            <div className="project__text">
-              <span>06</span>The Fader
-            </div>
-          </li>
-          <li>
-            <div className="project__text">
-              <span>07</span>New York Life
-            </div>
-          </li>
-          <li>
-            <div className="project__text">
-              <span>08</span>American Chemistry Society
-            </div>
-          </li>
-          <li>
-            <div className="project__text">
-              <span>+</span>more
-            </div>
-          </li>
-        </ul>
-      </div>
+      <Projects />
       <div className="contact">
         <ul>
           <li>
