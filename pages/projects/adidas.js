@@ -18,7 +18,12 @@ function Adidas() {
           ></video>
         </div>
         <div className="project__right">
-          <p>Adidas description</p>
+          <p>
+            Built the Raf Simons micro-site. It features a nice design and
+            assets. I built the site from scratch and handled all the animations
+            with plain Javascript. These involved the scroll parallax effect and
+            the image rotation.
+          </p>
         </div>
       </div>
       <style jsx>

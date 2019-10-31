@@ -19,10 +19,10 @@ function NatGeo() {
         </div>
         <div className="project__right">
           <p>
-            One of two Front-End Engineers who built Nat Geo's multi site. The
-            site was broken down into components with React and had appealing
-            animations. The Back-End was done with Drupal and also helped
-            binding the Front-End and Back-End with Twig.
+            One of two Front-End Engineers who built National Geographics's
+            multisite. The site was broken down into components with React and
+            had appealing animations. The Back-End was built with Drupal. Other
+            tasks involved binding the Front-End and Back-End with twig.
           </p>
         </div>
       </div>

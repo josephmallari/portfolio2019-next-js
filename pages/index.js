@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Transition } from "react-transition-group";
+import React from "react";
 import moment from "moment-timezone";
 import "../styles/index.scss";
 import IndexHead from "../components/IndexHead";
@@ -8,7 +7,6 @@ import Router from "next/router";
 import withGA from "next-ga";
 
 function Home() {
-  const [inProp, setInProp] = useState(false);
   const date = moment.utc(new Date(), true);
   const de = date.tz("Europe/Berlin").format("LT z");
   const ny = date.tz("America/New_York").format("LT z");
@@ -17,12 +15,6 @@ function Home() {
   return (
     <div className="wrapper">
       <IndexHead />
-      <Transition in={inProp} timeout={500}>
-        {state =>
-          // ...
-          console.log(state)
-        }
-      </Transition>
       <div className="lettering">
         <picture>
           <source
@@ -38,7 +30,7 @@ function Home() {
         </picture>
       </div>
       <h2>
-        Hello, I'm Joseph. I'm a developer based in Berlin, Germany. I'm
+        Hello, I&rsquo;m Joseph. I'm a developer based in Berlin, Germany. I'm
         currently working at{" "}
         <a href="http://www.visualmeta.com" target="_blank">
           Visual Meta GmbH (DE).
@@ -49,7 +41,7 @@ function Home() {
         <a href="http://lateral.io" target="_blank">
           Lateral GmbH (DE)
         </a>
-        , a Machine Learning start up. And CODE AND THEORY (NY), a digital
+        , a Machine Learning start up, and CODE AND THEORY (NY), a digital
         agency.
       </h2>
       <Projects />
