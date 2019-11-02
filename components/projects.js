@@ -20,8 +20,8 @@ function Project(props) {
   };
 
   const transitionStyles = {
-    entering: { maxHeight: "755px" },
-    entered: { maxHeight: "755px" },
+    entering: { maxHeight: "450px" },
+    entered: { maxHeight: "450px" },
     exiting: { maxHeight: 0 },
     exited: { maxHeight: 0 }
   };

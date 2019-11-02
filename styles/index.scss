@@ -12,7 +12,7 @@ body {
   max-width: 400px;
   margin: 0 auto;
 
-  @media (min-width: 968px) {
+  @media (min-width: 768px) {
     max-width: none;
   }
 
@@ -21,13 +21,117 @@ body {
   }
 }
 
+////////
+
+h5 {
+  flex-grow: 1;
+  margin: 0;
+  font-weight: 300;
+}
+
+video {
+  height: auto;
+  width: 500px;
+}
+
+h4 {
+  font-size: 45px;
+}
+
+h5 {
+  font-size: 25px;
+}
+
+p {
+  margin: 0 0 0 20px;
+  font-size: 22px;
+  line-height: 28px;
+}
+
 .project {
+  margin-bottom: 35px;
+
+  &__left {
+    flex-grow: 1;
+    margin-right: 25px;
+
+    @media (min-width: 1024px) {
+      margin-top: 6px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    margin-top: 10px;
+
+    h5 {
+      width: 100%;
+      font-size: 15px;
+
+      span {
+        display: block;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      h5 {
+        font-size: 21px;
+        width: auto;
+
+        span {
+          display: inline;
+        }
+      }
+    }
+  }
+
+  &__right {
+    position: relative;
+    flex-grow: 1;
+
+    p {
+      margin: 10px 0 0 0;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    a {
+      color: #000;
+      font-size: 16px;
+      position: relative;
+      text-transform: uppercase;
+      top: 10px;
+    }
+
+    @media (min-width: 1024px) {
+      p {
+        margin: 0;
+        font-size: 29px;
+        line-height: 31px;
+      }
+
+      a {
+        position: absolute;
+        bottom: 8px;
+        top: unset;
+      }
+    }
+  }
+
   &__info {
     display: flex;
     flex-direction: column;
 
     @media (min-width: 1024px) {
       flex-direction: row;
+
+      &.left-empty {
+        a {
+          bottom: -25px;
+        }
+      }
     }
   }
 

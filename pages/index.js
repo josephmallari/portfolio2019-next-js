@@ -30,7 +30,7 @@ function Home() {
         </picture>
       </div>
       <h2>
-        Hello, I&rsquo;m Joseph. I'm a developer based in Berlin, Germany. I'm
+        Hello, I&rsquo;m Joseph. I'm a developer living in Berlin, Germany. I'm
         currently working at{" "}
         <a href="http://www.visualmeta.com" target="_blank">
           Visual Meta GmbH (DE).

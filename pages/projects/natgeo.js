@@ -4,8 +4,12 @@ function NatGeo() {
   return (
     <div className="project">
       <div className="project__header">
-        <h5>Agency: Code and Theory</h5>
-        <h5>Technologies: React, CSS, Drupal, HTML5, Javascript</h5>
+        <h5>
+          Agency: <span>Code and Theory</span>
+        </h5>
+        <h5>
+          Technologies: <span>React, CSS, Drupal, HTML5, Javascript</span>
+        </h5>
       </div>
       <div className="project__info">
         <div className="project__left">
@@ -24,58 +28,9 @@ function NatGeo() {
             had appealing animations. The Back-End was built with Drupal. Other
             tasks involved binding the Front-End and Back-End with twig.
           </p>
+          <a href="https://www.nationalgeographic.com/">Visit site</a>
         </div>
       </div>
-      <style jsx>
-        {`
-          .project {
-            margin-bottom: 30px;
-          }
-          .project__header {
-            display: flex;
-            flex-direction: row;
-            margin-bottom: 25px;
-          }
-
-          h5 {
-            flex-grow: 1;
-            margin: 0;
-            font-weight: 300;
-          }
-
-          .project__info {
-            display: flex;
-          }
-
-          .project__left {
-            flex-grow: 1;
-          }
-
-          .project__right {
-            flex-grow: 1;
-            position: relative;
-          }
-
-          video {
-            height: auto;
-            width: 500px;
-          }
-
-          h4 {
-            font-size: 45px;
-          }
-
-          h5 {
-            font-size: 25px;
-          }
-
-          p {
-            margin: 0 0 0 20px;
-            font-size: 22px;
-            line-height: 28px;
-          }
-        `}
-      </style>
     </div>
   );
 }
