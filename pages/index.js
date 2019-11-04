@@ -64,7 +64,7 @@ function Home() {
             </a>
           </li>
           <li>
-            <a href="http://www.linkedin.com/in/josephmallari" target="_blank">
+            <a href="http://www.linkedin.com/in/joseph-mallari" target="_blank">
               linkedin
             </a>
           </li>
