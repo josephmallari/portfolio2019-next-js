@@ -3,16 +3,11 @@ import React from "react";
 function NatGeo() {
   return (
     <div className="project">
-      <div className="project__header">
-        <h5>
-          Agency: <span>Code and Theory</span>
-        </h5>
-        <h5>
-          Technologies: <span>React, CSS, Drupal, HTML5, Javascript</span>
-        </h5>
-      </div>
       <div className="project__info">
         <div className="project__left">
+          <h5>
+            Agency: <span>Code and Theory</span>
+          </h5>
           <video
             src="/static/NG.mov"
             preload="true"
@@ -22,6 +17,9 @@ function NatGeo() {
           ></video>
         </div>
         <div className="project__right">
+          <h5>
+            Technologies: <span>React, CSS, Drupal, HTML5, Javascript</span>
+          </h5>
           <p>
             One of two Front-End Engineers who built National Geographics's
             multisite. The site was broken down into components with React and

@@ -3,16 +3,11 @@ import React from "react";
 function Adidas() {
   return (
     <div className="project">
-      <div className="project__header">
-        <h5>
-          Agency: <span>Code and Theory</span>
-        </h5>
-        <h5>
-          Technologies: <span>Javascript, HTML, CSS, PHP</span>
-        </h5>
-      </div>
       <div className="project__info">
         <div className="project__left">
+          <h5>
+            Agency: <span>Code and Theory</span>
+          </h5>
           <video
             src="/static/raf2.mov"
             preload="true"
@@ -22,6 +17,9 @@ function Adidas() {
           ></video>
         </div>
         <div className="project__right">
+          <h5>
+            Technologies: <span>Javascript, HTML, CSS, PHP</span>
+          </h5>
           <p>
             Built the Raf Simons micro-site. It features a nice design and
             assets. I built the site from scratch and handled all the animations

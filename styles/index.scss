@@ -51,6 +51,29 @@ p {
 .project {
   margin-bottom: 35px;
 
+  h5 {
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 15px;
+
+    span {
+      display: inline-block;
+      margin-top: 5px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h5 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      width: auto;
+
+      span {
+        display: inline;
+      }
+    }
+  }
+
   &__left {
     flex-grow: 1;
     margin-right: 25px;
@@ -65,30 +88,6 @@ p {
     flex-direction: row;
     margin-bottom: 15px;
     margin-top: 25px;
-
-    h5 {
-      width: 100%;
-      font-size: 15px;
-
-      span {
-        display: block;
-      }
-    }
-
-    @media (min-width: 1024px) {
-      h5 {
-        font-size: 18px;
-				width: auto;
-				
-				&:first-child {
-					margin-right: 27px;
-				}
-
-        span {
-          display: inline;
-        }
-      }
-    }
   }
 
   &__right {
@@ -130,6 +129,7 @@ p {
 
     @media (min-width: 1024px) {
       flex-direction: row;
+      margin-top: 15px;
 
       &.left-empty {
         a {
