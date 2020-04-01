@@ -6,7 +6,7 @@ function indexHead() {
       <Head>
         <title>Joseph Mallari's Website</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta property="og:image" content="/static/chrome.png"/>
+        <meta property='og:image' content='/static/chrome.png"/>
         <link rel="shortcut icon" href="/static/favicon.ico" />
       </Head>
     </div>
