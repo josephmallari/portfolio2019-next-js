@@ -9,6 +9,7 @@ const links = [
   return link
 })
 
+
 const Nav = () => (
   <nav>
     <ul>
