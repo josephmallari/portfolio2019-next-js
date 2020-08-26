@@ -32,7 +32,7 @@ function Home() {
       <h2>
         Hello, I&rsquo;m Joseph. I'm a developer living in Berlin, Germany. I'm
         currently working at{" "}
-        <a href="http://www.visualmeta.com" target="_blank">
+        <a href="http://www.visual-meta.com" target="_blank">
           Visual Meta GmbH (DE).
         </a>
       </h2>

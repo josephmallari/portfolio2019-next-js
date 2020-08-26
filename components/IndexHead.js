@@ -9,7 +9,7 @@ function indexHead() {
         <meta property="og:image" content="/static/chrome.png" />
         <meta property="og:title" content="Joseph Mallari's portfolio" />
         <meta property="og:description" content="Portfolio of Joseph Mallari" />
-        <meta property="og:url" content="https://josephmallari.de" />
+        <meta property="og:url" content="https://josephmallari.com" />
         <link rel="shortcut icon" href="/static/favicon.ico" />
       </Head>
     </div>
