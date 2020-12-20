@@ -3,12 +3,19 @@ import React from "react";
 function TheLot() {
   return (
     <div className="project">
-      <div className="project__header">
+      <div className="project__info">
+        <div className="project__left">
         <h5>
           Technologies: <span>React, CSS, Javascript, JSON, Digital Ocean</span>
         </h5>
-      </div>
-      <div className="project__info left-empty">
+        <video
+            src="/static/lot.mov"
+            preload="true"
+            muted
+            autoPlay
+            loop
+          ></video>
+        </div>
         <div className="project__right">
           <p>
             Built The Lot Photo's portfolio site. Worked with beautiful assets
@@ -16,9 +23,6 @@ function TheLot() {
             Adam Ridgeway. Built with React and used React CSS transition
             groups.
           </p>
-          <a href="https://thelot.photo/" target="_blank">
-            Visit site
-          </a>
         </div>
       </div>
     </div>
