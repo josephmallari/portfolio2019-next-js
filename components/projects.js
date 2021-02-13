@@ -1,11 +1,11 @@
 import React, { useState, useRef } from "react";
-import NatGeo from "../pages/projects/natgeo";
-import Adidas from "../pages/projects/adidas";
-import TheLot from "../pages/projects/lot";
-import Cfr from "../pages/projects/cfr";
-import Fader from "../pages/projects/fader";
-import Nyl from "../pages/projects/nyl";
-import Acs from "../pages/projects/acs";
+import NatGeo from "../pages/projects/Natgeo";
+import Adidas from "../pages/projects/Adidas";
+import TheLot from "../pages/projects/Lot";
+import Cfr from "../pages/projects/Cfr";
+import Fader from "../pages/projects/Fader";
+import Nyl from "../pages/projects/Nyl";
+import Acs from "../pages/projects/Acs";
 import { Transition } from "react-transition-group";
 
 function Project(props) {
