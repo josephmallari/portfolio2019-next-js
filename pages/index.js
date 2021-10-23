@@ -32,14 +32,14 @@ function Home() {
       <h2>
         Hello, I&rsquo;m Joseph. I'm a developer living in Berlin, Germany. I'm
         currently working at{" "}
-        <a href="http://www.visual-meta.com" target="_blank">
-          Visual Meta GmbH (DE).
+        <a href="http://www.oceansapart.com" target="_blank">
+          Oceans Apart (DE).
         </a>
       </h2>
       <h2>
         I most recently worked at{" "}
-        <a href="http://lateral.io" target="_blank">
-          Lateral GmbH (DE)
+        <a href="http://visual-meta.com" target="_blank">
+          Visual Meta GmbH (DE)
         </a>
         , a Machine Learning start up, and CODE AND THEORY (NY), a digital
         agency.
